@@ -103,7 +103,9 @@ class _MyHomePageState extends State<MyHomePage> {
       navigationBar: CupertinoNavigationBar(
         middle: Text(title),
         backgroundColor:
-            CupertinoTheme.of(context).barBackgroundColor.withOpacity(0.5),
+            CupertinoTheme.of(context).barBackgroundColor.withValues(
+                  alpha: 0.5,
+                ),
       ),
       child: Column(
         children: [
